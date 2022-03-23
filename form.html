@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css">
+</head>
+<body>
+    <div class="page-body">
+        <!-- <div class="container-xl"> -->
+            <div class="row row-cards">
+                <div class="col-12">
+                    <form action="https://httpbin.org/post" method="post" class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Form</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="mb-3">
+                                        <label class="form-label" >Name</label>
+                                        <input type="text" class="form-control" name="name" placeholder="Enter Name">
+                                    </div>     
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3">
+                                        <div class="form-label">Type</div>
+                                        <select class="form-select">
+                                            <option value="0" selected>Type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>        
+                                    </div>
+                                </div>  
+                                <div class="col-xl-4">
+                                    <div class="mb-3">
+                                        <div class="form-label">Category</div>
+                                        <select class="form-select">
+                                            <option value="0" selected>Category</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>        
+                                    </div>
+                                </div>       
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="mb-3">
+                                        <label class="form-label" >SKU</label>
+                                        <input type="text" class="form-control" name="sku" placeholder="Enter SKU">
+                                    </div>   
+                                </div>
+                                <div class="col-xl-8">
+                                    <label class="form-label">Threshold Unit</label>
+                                    <input type="number" class="form-control" placeholder="Enter Threshold Unit">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="mb-3">
+                                                <label class="form-label" >Unit Sale Price</label>
+                                                <input type="number" class="form-control" name="unit_sale_price" placeholder="Enter Unit Sale Price">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Unit</label>
+                                                <input type="number" class="form-control" placeholder="Enter Units">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Weight</label>
+                                                <input type="number" class="form-control" placeholder="Enter Weight">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="">
+                                                <fieldset class="form-fieldset mt-2 ">
+                                                    <label class="form-check">
+                                                        <input type="checkbox" class="form-check-input">
+                                                        <span class="form-check-label mb-3">Is Expires</span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input type="checkbox" class="form-check-input">
+                                                        <span class="form-check-label mb-3">Is AllowBackorders</span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input type="checkbox" class="form-check-input">
+                                                        <span class="form-check-label">Is BOM</span>
+                                                    </label>
+                                                </fieldset>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Volume</label>
+                                                    <input type="number" class="form-control" placeholder="Enter Volume">
+                                                </div> 
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <label class="form-label">Dimensions</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Length</span>
+                                        <input type="number" class="form-control" placeholder="Enter Length" name = "length">
+                                        <span class="input-group-text">Width</span>
+                                        <input type="number" class="form-control" placeholder="Enter Width" name = "width">
+                                        <span class="input-group-text">Height</span>
+                                          <input type="number" class="form-control" placeholder="Enter Height" name = "height">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-xl-12">
+                                    <label class="form-label">Description</label>
+                                    <textarea name="description" id="description" class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <ul class="nav nav-tabs nav-fill" data-bs-toggle="tabs">
+                                            <li class="nav-item">
+                                                <a href="#tabs-home-16" class="nav-link active" data-bs-toggle="tab">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="5 12 3 12 12 3 21 12 19 12"></polyline><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg>
+                                                    Attributes/Variants
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-packaging-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                    Packaging
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-bom-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                    BOM
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-images-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                        Images
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-purchase-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/activity -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12h4l3 8l4 -16l3 8h4"></path></svg>
+                                                    Purchase
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-sale-16" class="nav-link " data-bs-toggle="tab">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                    Sales
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-commission-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                    Commission
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-taxe-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                    Taxes
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#tabs-pricesale-16" class="nav-link" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/user -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                                        Price Sales
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <div class="tab-content">
+                                                <div class="tab-pane show active" id="tabs-home-16">
+                                                    <p>Home</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-packaging-16">
+                                                    <p>Packaging</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-bom-16">
+                                                    <p>BOM</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-images-16">
+                                                    <p>Images</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-purchase-16">
+                                                    <p>Purchase</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-sale-16">
+                                                    <p>Sale</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-commission-16">
+                                                    <p>Commission</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-Taxe-16">
+                                                    <p>Taxes</p>
+                                                </div>
+                                                <div class="tab-pane" id="tabs-pricesale-16">
+                                                    <p>Price Sale</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </form>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+     
+    
+<script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
+</body>
+</html>
